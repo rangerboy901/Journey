@@ -13,6 +13,11 @@
 		50499A45299ADB4200FD768C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50499A44299ADB4200FD768C /* Preview Assets.xcassets */; };
 		50499A47299ADB4200FD768C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50499A46299ADB4200FD768C /* Persistence.swift */; };
 		50499A4A299ADB4200FD768C /* Journey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50499A48299ADB4200FD768C /* Journey.xcdatamodeld */; };
+		50499A56299ADC9100FD768C /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50499A55299ADC9100FD768C /* Welcome.swift */; };
+		50499A58299AE79100FD768C /* UIScreen+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50499A57299AE79100FD768C /* UIScreen+Utilities.swift */; };
+		50499A5A299AE8BB00FD768C /* Color+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50499A59299AE8BB00FD768C /* Color+Utilities.swift */; };
+		50499A5C299AEBFF00FD768C /* WelcomeMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50499A5B299AEBFF00FD768C /* WelcomeMessage.swift */; };
+		50499A5F299AFA5000FD768C /* WelcomeShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50499A5E299AFA5000FD768C /* WelcomeShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		50499A46299ADB4200FD768C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		50499A49299ADB4200FD768C /* Journey.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Journey.xcdatamodel; sourceTree = "<group>"; };
 		50499A4B299ADB4200FD768C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50499A55299ADC9100FD768C /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		50499A57299AE79100FD768C /* UIScreen+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Utilities.swift"; sourceTree = "<group>"; };
+		50499A59299AE8BB00FD768C /* Color+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Utilities.swift"; sourceTree = "<group>"; };
+		50499A5B299AEBFF00FD768C /* WelcomeMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessage.swift; sourceTree = "<group>"; };
+		50499A5E299AFA5000FD768C /* WelcomeShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +66,12 @@
 		50499A3C299ADB4200FD768C /* Journey */ = {
 			isa = PBXGroup;
 			children = (
+				50499A5D299AF9F600FD768C /* Shapes */,
 				50499A3D299ADB4200FD768C /* JourneyApp.swift */,
-				50499A3F299ADB4200FD768C /* ContentView.swift */,
+				50499A54299ADC6900FD768C /* Extensions */,
+				50499A53299ADB8900FD768C /* Managers */,
+				50499A52299ADB8100FD768C /* Models */,
+				50499A51299ADB7800FD768C /* Views */,
 				50499A41299ADB4200FD768C /* Assets.xcassets */,
 				50499A46299ADB4200FD768C /* Persistence.swift */,
 				50499A4B299ADB4200FD768C /* Info.plist */,
@@ -73,6 +87,47 @@
 				50499A44299ADB4200FD768C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50499A51299ADB7800FD768C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50499A3F299ADB4200FD768C /* ContentView.swift */,
+				50499A55299ADC9100FD768C /* Welcome.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		50499A52299ADB8100FD768C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50499A5B299AEBFF00FD768C /* WelcomeMessage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		50499A53299ADB8900FD768C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		50499A54299ADC6900FD768C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				50499A57299AE79100FD768C /* UIScreen+Utilities.swift */,
+				50499A59299AE8BB00FD768C /* Color+Utilities.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		50499A5D299AF9F600FD768C /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				50499A5E299AFA5000FD768C /* WelcomeShape.swift */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50499A5C299AEBFF00FD768C /* WelcomeMessage.swift in Sources */,
 				50499A4A299ADB4200FD768C /* Journey.xcdatamodeld in Sources */,
+				50499A5F299AFA5000FD768C /* WelcomeShape.swift in Sources */,
+				50499A56299ADC9100FD768C /* Welcome.swift in Sources */,
+				50499A58299AE79100FD768C /* UIScreen+Utilities.swift in Sources */,
 				50499A47299ADB4200FD768C /* Persistence.swift in Sources */,
+				50499A5A299AE8BB00FD768C /* Color+Utilities.swift in Sources */,
 				50499A40299ADB4200FD768C /* ContentView.swift in Sources */,
 				50499A3E299ADB4200FD768C /* JourneyApp.swift in Sources */,
 			);
